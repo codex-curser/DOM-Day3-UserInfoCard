@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 3 - Handling Forms</title>
+</head>
+<body>
+  <h1>Day 3: User Info Card</h1>
+
+  <!-- ✅ Add an ID to the form so we can target it in JS -->
+  <form id="user-form">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <br>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    <br>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" required min="1" max="99">
+    </div>
+    <br>
+    <button type="submit">Create Card</button>
+   
+  </form>
+
+  <!-- ✅ Give this container an ID for generated cards -->
+  <div id="card-container"></div>
+
+  <script src="day3.js"></script>
+</body>
+</html>
